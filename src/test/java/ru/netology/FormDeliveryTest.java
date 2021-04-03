@@ -38,7 +38,7 @@ public class FormDeliveryTest {
 
     @Test
     void shoulSelectCityFromList() {
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         $$("[type=text]").first().sendKeys("н", "о", "в");
         $(byText("Новосибирск")).click();
         $("[placeholder='Дата встречи']").sendKeys("\b\b\b\b\b\b\b\b");
